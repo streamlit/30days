@@ -1,1 +1,2 @@
 pandas
+click==8.0

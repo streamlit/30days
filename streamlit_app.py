@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import urllib.request
 from PIL import Image
+import glob
 
 md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content',"*.md") ])
 

@@ -5,13 +5,15 @@ import pandas as pd
 import urllib.request
 from PIL import Image
 
+md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content',"*.md") ])
+
 # Logo and Navigation
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
     st.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
 st.markdown('# 30 Days of Streamlit')
 
-days_list = [f'Day {x}' for x in list(np.arange(1,31))]
+days_list = [f'Day {x}' for x in md_files]
 selected_day = st.selectbox('Start the Challenge 👇', days_list)
 
 with st.expander("About the #30DaysOfStreamlit"):

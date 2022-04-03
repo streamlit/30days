@@ -40,7 +40,7 @@ st.sidebar.markdown('''
 ''')
 
 st.sidebar.header('Deploy')
-st.sidebar.markdown('With a few clicks of the mouse, Streamlit apps can be easily deployed using [Streamlit Cloud](https://streamlit.io/cloud).')
+st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Cloud](https://streamlit.io/cloud) in just a few clicks.')
 
 # Display content
 for i in days_list:

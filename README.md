@@ -32,4 +32,4 @@ Complete the daily challenges, share your solutions with us on Twitter or Linked
 - Our [Twitter](https://twitter.com/streamlit) and [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) feeds for daily updates
 - Streamlit [documentation](https://docs.streamlit.io/) and [cheat sheet](https://docs.streamlit.io/library/cheatsheet) for a thorough reference of Streamlit commands
 - Our awesome [Gallery](https://streamlit.io/gallery) for inspiration, templates, and community apps
-- Our blog [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) for tips and the latest Streamlit info
+- Our [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) for tips and the latest Streamlit info

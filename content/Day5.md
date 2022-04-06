@@ -4,6 +4,7 @@
 
 In addition to being able to display text, the following can also be displayed via the `st.write()` command:
 
+
 - Prints strings; works like `st.markdown()`
 - Displays a Python `dict`
 - Displays `pandas` DataFrame can be displayed as a table

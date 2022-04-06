@@ -59,6 +59,7 @@ As we can see from the above code box, the `st.button()` command accepts the `la
 
 The `st.write` command is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
 
+
 ```python
 st.write('Why hello there')
 ```

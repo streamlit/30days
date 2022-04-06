@@ -6,7 +6,7 @@ This is the official repo of `#30DaysOfStreamlit` — a 30-day social challenge 
 
 All you need to participate is a computer, a basic understanding of Python, and your curiosity. 🧠
 
-A new challenge is released daily via Streamlit's [Twitter](https://twitter.com/streamlit) and [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) accounts, and the [`#30DaysOfStreamlit` app](https://share.streamlit.io/streamlit/30days/).
+A new challenge is released daily via Streamlit's [Twitter](https://twitter.com/streamlit) and [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) accounts as well as the [`#30DaysOfStreamlit` app](https://share.streamlit.io/streamlit/30days/).
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/30days/)
 

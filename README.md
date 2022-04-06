@@ -18,7 +18,7 @@ Find out more about the specific challenges by participating! The 30-day challen
 
 | Beginner (Days 1-7) | Intermediate (Days 8-23) | Advanced (Days 24-30) |
 | :---        |    :----   |          :--- |
-| Set up your local and cloud coding environments, install Streamlit, and build your first Streamlit app.| Learn about a new [Streamlit command](https://docs.streamlit.io/library/api-reference) each day and use it to create and deploy a simple Streamlit app. <br><br>E.g. Use `st.download_button` in your app.     | Learn about important topics such as session state, efficient data and memory management via caching, complex layouts, and much more.
+| Set up your local and cloud coding environments, install Streamlit, and build your first Streamlit app.| Learn about a new [Streamlit command](https://docs.streamlit.io/library/api-reference) each day and use it to create and deploy a simple Streamlit app. | Learn about important topics such as session state, efficient data and memory management via caching, complex layouts, and much more.
 
 ## Prizes
 

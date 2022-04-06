@@ -24,7 +24,7 @@ Find out more about the specific challenges by participating! The 30-day challen
 
 If getting up to speed with the fastest and easiest way to build data apps isn't already the best summer gift, you can also win Streamlit goodies!
 
-Complete the daily challenges, share your solutions with us on Twitter or LinkedIn, and get rewarded with cool Streamlit swag! 🎁
+Complete the daily challenges, share your solutions with us on [Twitter](https://twitter.com/streamlit) or [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all), and get rewarded with cool Streamlit swag! 🎁
 
 ## Resources
 

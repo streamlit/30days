@@ -47,9 +47,9 @@ if st.button('Say hello'):
 else:
      st.write('Goodbye')
 ```
-As we can see from the above code box, the `st.button()` function accepts the `label` input argument of `Say hello`, which is the text that the button displays.
+As we can see from the above code box, the `st.button()` command accepts the `label` input argument of `Say hello`, which is the text that the button displays.
 
-The `st.write` function is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
+The `st.write` command is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
 ```python
 st.write('Why hello there')
 ```

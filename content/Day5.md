@@ -2,7 +2,7 @@
 
 `st.write` allows writing text and arguments to the Streamlit app.
 
-In addition to being able to display text, the following can also be displayed via the `st.write()` method:
+In addition to being able to display text, the following can also be displayed via the `st.write()` command:
 - Prints strings; works like `st.markdown()`
 - Displays a Python `dict`
 - Displays `pandas` DataFrame can be displayed as a table
@@ -11,7 +11,7 @@ In addition to being able to display text, the following can also be displayed v
 
 ## What we're building?
 
-A simple app showing the various ways on how to use the `st.write()` method for displaying text, numbers, DataFrames and plots.
+A simple app showing the various ways on how to use the `st.write()` command for displaying text, numbers, DataFrames and plots.
 
 ## Demo app
 The deployed Streamlit app should look something like the one shown in the below link: 

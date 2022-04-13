@@ -8,4 +8,5 @@ As you can see from the URL above, a GitHub repo URL is appended after `https://
 
 > Note: There are other similar cloud development environment such as:
 > - [GitHub Codespaces](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-python-project-for-codespaces)
+> - [Replit](https://replit.com/)
 > - [Cloud9](https://aws.amazon.com/cloud9/)

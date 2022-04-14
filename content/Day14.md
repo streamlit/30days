@@ -25,7 +25,7 @@ pip install streamlit_pandas_profiling
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-components/)
 
 ## Code
-Here's how to use st.write:
+Here's how to build a Streamlit app using a component:
 ```python
 import streamlit as st
 import pandas as pd

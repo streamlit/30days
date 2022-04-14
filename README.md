@@ -33,3 +33,9 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 - Streamlit [documentation](https://docs.streamlit.io/) and [cheat sheet](https://docs.streamlit.io/library/cheatsheet) for a thorough reference of Streamlit commands
 - Our awesome [Gallery](https://streamlit.io/gallery) for inspiration, templates, and community apps
 - Our [blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) for tips and the latest Streamlit info
+
+## Translations
+
+Want to help us expand the reach of #30daysofStreamlit and English isn't your primary language? Translate the challenges and link to them below!
+
+- [Portuguese](https://github.com/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)

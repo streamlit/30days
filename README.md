@@ -38,4 +38,4 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 
 Want to help us expand the reach of #30daysofStreamlit and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
 
-- [Portuguese](https://github.com/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)
+- Portuguese ([source code](https://github.com/franciscoed/30days), [30 Dias de Streamlit app](https://share.streamlit.io/franciscoed/30days)) by [franciscoed](https://github.com/franciscoed)

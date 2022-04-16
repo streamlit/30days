@@ -15,7 +15,7 @@ Here's how to customize the theme of Streamlit apps:
 ```python
 import streamlit as st
 
-st.header('Customizing the theme of Streamlit apps')
+st.title('Customizing the theme of Streamlit apps')
 
 st.write('Contents of the config.toml file of this app')
 
@@ -38,13 +38,15 @@ The very first thing to do when creating a Streamlit app is to start by importin
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+This is followed by creating a title text for the app:
 ```python
-st.header('Theming with config.toml')
+st.title('Theming with config.toml')
 ```
 
 Next, we're going to show the contents of the `config.toml` file which we'll first display a note of this via `st.write` followed by the actual code via `st.code`:
 ```python
+st.write('Contents of the config.toml file of this app')
+
 st.code("""
 [theme]
 primaryColor="#F39C12"

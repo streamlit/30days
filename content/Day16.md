@@ -11,7 +11,7 @@ A simple app that shows the result of our theme customization. This is made poss
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-custom-theme/)
 
 ## Code
-Here's the code to the `streamlit_app.py` file:
+Here's the code to the [`streamlit_app.py`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/streamlit_app.py) file:
 ```python
 import streamlit as st
 

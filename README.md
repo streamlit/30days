@@ -36,6 +36,6 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 
 ## Translations
 
-Want to help us expand the reach of #30daysofStreamlit and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
+Want to help us expand the reach of #30DaysOfStreamlit and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
 
 - [Portuguese](https://github.com/franciscoed/30days) (by [franciscoed](https://github.com/franciscoed)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/franciscoed/30days)

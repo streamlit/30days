@@ -53,9 +53,9 @@ This is followed by creating a title text for the app:
 st.title('Theming with config.toml')
 ```
 
-Next, we're going to show the contents of the `config.toml` file which we'll first display a note of this via `st.write` followed by the actual code via `st.code`:
+Next, we're going to show the contents of the `.streamlit/config.toml` file which we'll first display a note of this via `st.write` followed by the actual code via `st.code`:
 ```python
-st.write('Contents of the `./streamlit/config.toml` file of this app')
+st.write('Contents of the ./streamlit/config.toml file of this app')
 
 st.code("""
 [theme]

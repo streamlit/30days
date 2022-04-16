@@ -55,7 +55,7 @@ st.title('Theming with config.toml')
 
 Next, we're going to show the contents of the `config.toml` file which we'll first display a note of this via `st.write` followed by the actual code via `st.code`:
 ```python
-st.write('Contents of the config.toml file of this app')
+st.write('Contents of the `./streamlit/config.toml` file of this app')
 
 st.code("""
 [theme]
@@ -73,7 +73,7 @@ number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
 ```
 
-Let's now take a look at the custom colors that we've used in this app, which is specified in the `config.toml` file:
+Let's now take a look at the custom colors that we've used in this app, which is specified in the `.streamlit/config.toml` file:
 - `primaryColor="#F39C12"` - This sets the primary color to orange. Notice the orange colors in the slider widget.
 - `backgroundColor="#2E86C1"` - This sets the background color to blue. Notice the main panel has a blue background color.
 - `secondaryBackgroundColor="#AED6F1"` - This sets the secondary background color to dark gray. Notice the gray background color of the sidebar and the background color of the code box in the main panel.

@@ -4,14 +4,14 @@ We can customize the theme by adjusting parameters in `config.toml`, which is a 
 
 ## What we're building?
 
-A simple app that shows the result of our theme customization. This is made possible by customizing the HTML HEX code inside the `.streamlit/config.toml` file.
+A simple app that shows the result of our theme customization. This is made possible by customizing the HTML HEX code inside the [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) file.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-custom-theme/)
 
 ## Code
-Here's how to customize the theme of Streamlit apps:
+Here's the code to the `streamlit_app.py` file:
 ```python
 import streamlit as st
 
@@ -30,6 +30,16 @@ font="monospace"
 
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
+```
+
+Here's the code to the [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) file:
+```python
+[theme]
+primaryColor="#F39C12"
+backgroundColor="#2E86C1"
+secondaryBackgroundColor="#AED6F1"
+textColor="#FFFFFF"
+font="monospace"
 ```
 
 ## Line-by-line explanation

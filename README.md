@@ -1,5 +1,7 @@
 # 30 Days Of Streamlit 🎈
 
+![](3AF34648-C61D-47CE-9E56-C496C5A7C240.jpeg)
+
 This is the official repo of `#30DaysOfStreamlit` — a 30-day social challenge for you to learn, build and deploy [Streamlit](https://streamlit.io) apps.
 
 ## How to participate

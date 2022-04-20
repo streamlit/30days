@@ -1,6 +1,6 @@
 # 30 Days Of Streamlit 🎈
 
-This is the official repo of `#30DaysOfStreamlit` — a 30-day social challenge for you to build and deploy [Streamlit](https://streamlit.io) apps.
+This is the official repo of `#30DaysOfStreamlit` — a 30-day social challenge for you to learn, build and deploy [Streamlit](https://streamlit.io) apps.
 
 ## How to participate
 

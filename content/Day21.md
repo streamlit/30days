@@ -56,4 +56,4 @@ st.balloons()
 ```
 
 ## Further reading
-` [`st.progress`](https://docs.streamlit.io/library/api-reference/status/st.progress)
+- [`st.progress`](https://docs.streamlit.io/library/api-reference/status/st.progress)

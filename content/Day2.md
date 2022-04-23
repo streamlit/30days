@@ -10,7 +10,7 @@ Create a file called `streamlit_app.py`
 
 To the newly created file, enter the following lines of code:
 
-```
+```python
 import streamlit as st
 
 st.write('Hello world!')

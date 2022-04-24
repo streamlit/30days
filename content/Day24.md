@@ -33,33 +33,36 @@ import numpy as np
 import pandas as pd
 from time import time
 
-st.header('st.cache')
-
-@st.cache(suppress_st_warning=True)
-def load_data_a():
-  df = pd.DataFrame(
-    np.random.rand(1000000, 5),
-    columns=['a', 'b', 'c', 'd', 'e']
-  )
-  return df
-
-def load_data_b():
-  df = pd.DataFrame(
-    np.random.rand(1000000, 5),
-    columns=['a', 'b', 'c', 'd', 'e']
-  )
-  return df
+st.title('st.cache')
 
 # Using cache
 a0 = time()
 st.subheader('Using st.cache')
+
+@st.cache(suppress_st_warning=True)
+def load_data_a():
+  df = pd.DataFrame(
+    np.random.rand(2000000, 5),
+    columns=['a', 'b', 'c', 'd', 'e']
+  )
+  return df
+
 st.write(load_data_a())
 a1 = time()
 st.info(a1-a0)
 
+
 # Not using cache
 b0 = time()
 st.subheader('Not using st.cache')
+
+def load_data_b():
+  df = pd.DataFrame(
+    np.random.rand(2000000, 5),
+    columns=['a', 'b', 'c', 'd', 'e']
+  )
+  return df
+
 st.write(load_data_b())
 b1 = time()
 st.info(b1-b0)
@@ -74,9 +77,9 @@ import pandas as pd
 from time import time
 ```
 
-This is followed by creating a header text for the app:
+This is followed by creating a title text for the app:
 ```python
-st.header('Streamlit Cache')
+st.title('Streamlit Cache')
 ```
 
 Next, we'll define 2 custom functions for generating a large DataFrame where the first one makes use of the `st.cache` decorator while the second does not:
@@ -102,6 +105,9 @@ Finally, we run the custom function while also timing the run time using the `ti
 # Using cache
 a0 = time()
 st.subheader('Using st.cache')
+
+# We insert the load_data_a function here
+
 st.write(load_data_a())
 a1 = time()
 st.info(a1-a0)
@@ -109,6 +115,9 @@ st.info(a1-a0)
 # Not using cache
 b0 = time()
 st.subheader('Not using st.cache')
+
+# We insert the load_data_b function here
+
 st.write(load_data_b())
 b1 = time()
 st.info(b1-b0)

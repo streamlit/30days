@@ -15,7 +15,7 @@ md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
     st.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
-st.markdown('# 30 Days of Streamlit')
+st.markdown('# 30 Days Of Streamlit（zh-TW 繁體中文版）')
 
 days_list = [f'Day {x}' for x in md_files]
 
@@ -24,32 +24,32 @@ query_params = st.experimental_get_query_params()
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
-selected_day = st.selectbox('Start the Challenge 👇', days_list, key="day", on_change=update_params)
+selected_day = st.selectbox('開始挑戰 👇', days_list, key="day", on_change=update_params)
 
-with st.expander("About the #30DaysOfStreamlit"):
+with st.expander("有關 #30DaysOfStreamlit"):
     st.markdown('''
-    The **#30DaysOfStreamlit** is a coding challenge designed to help you get started in building Streamlit apps.
+    **#30DaysOfStreamlit** 是一個程式語言挑戰，設計用來幫助你開始建立 Streamlit 應用程式。
     
-    Particularly, you'll be able to:
-    - Set up a coding environment for building Streamlit apps
-    - Build your first Streamlit app
-    - Learn about all the awesome input/output widgets to use for your Streamlit app
+    特別是，這 30 天內你能夠：
+    - 設定一個 coding 環境來建立 Streamlit 應用程式
+    - 建立你第一個 Streamlit 應用程式
+    - 學習有關所有優秀的 輸入/輸出 部件來用在你的 Streamlit 應用程式
     ''')
 
 # Sidebar
-st.sidebar.header('About')
-st.sidebar.markdown('[Streamlit](https://streamlit.io) is a Python library that allows the creation of interactive, data-driven web applications in Python.')
+st.sidebar.header('關於')
+st.sidebar.markdown('[Streamlit](https://streamlit.io) 是一個 Python 的函式庫，允許使用 Python 建立 可互動、資料驅動 的 web 應用程式。')
 
-st.sidebar.header('Resources')
+st.sidebar.header('資源')
 st.sidebar.markdown('''
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)
-- [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
-- [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (How to master Streamlit for data science)
+- [Streamlit 文件](https://docs.streamlit.io/)
+- [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet)
+- [Book](https://www.amazon.com/dp/180056550X)（開始 Streamlit for 資料科學）
+- [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/)（如何精通 Streamlit for 資料科學）
 ''')
 
-st.sidebar.header('Deploy')
-st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Cloud](https://streamlit.io/cloud) in just a few clicks.')
+st.sidebar.header('部署')
+st.sidebar.markdown('只需要點幾下，你可以透過 [Streamlit Cloud](https://streamlit.io/cloud) 快速地部署 Streamlit 應用程式')
 
 # Display content
 for i in days_list:
@@ -60,7 +60,7 @@ for i in days_list:
             st.markdown(f.read())
         if os.path.isfile(f'content/figures/{j}.csv') == True:
             st.markdown('---')
-            st.markdown('### Figures')
+            st.markdown('### 圖表')
             df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
             for i in range(len(df)):
                 st.image(f'content/images/{df.img[i]}')

@@ -15,7 +15,7 @@ md_files = sorted([int(x.strip('Day').strip('.md')) for x in glob.glob1('content
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
     st.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
-st.markdown('# 30 Days Of Streamlit（zh-TW 繁體中文版）')
+st.markdown('# 30 Days Of Streamlit（繁體中文版）')
 
 days_list = [f'Day {x}' for x in md_files]
 
@@ -60,7 +60,7 @@ for i in days_list:
             st.markdown(f.read())
         if os.path.isfile(f'content/figures/{j}.csv') == True:
             st.markdown('---')
-            st.markdown('### 圖表')
+            st.markdown('### 圖表（Figures）')
             df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
             for i in range(len(df)):
                 st.image(f'content/images/{df.img[i]}')

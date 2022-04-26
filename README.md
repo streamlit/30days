@@ -1,4 +1,4 @@
-# 30 Days Of Streamlit（zh-TW 繁體中文版） 🎈
+# 30 Days Of Streamlit（繁體中文版） 🎈
 
 <img src='3AF34648-C61D-47CE-9E56-C496C5A7C240.jpeg' height=250>
 
@@ -10,7 +10,7 @@ This repo is re-written in Traditional Chinese (zh-TW) by [DragonChen](https://g
 
 *Update Date: 2022/04/26*
 
-[Parent Repository](https://github.com/streamlit/30days): 25 / 30
+[Parent Repository](https://github.com/streamlit/30days): 25 / 30  
 Translated Days: 5 / 30
 
 ## 如何參與
@@ -27,7 +27,7 @@ Streamlit 的 [Twitter](https://twitter.com/streamlit) 和 [LinkedIn](https://ww
 
 通過參與來了解更多關於挑戰的具體資訊！這 30 天的挑戰共分為 3 個難度級別，以吸引不同熟悉度的參與者：
 
-| Beginner (Days 1-7) | Intermediate (Days 8-23) | Advanced (Days 24-30) |
+| 初階 (Days 1-7) | 中階 (Days 8-23) | 進階 (Days 24-30) |
 | :---        |    :----   |          :--- |
 | 設定你本地和雲端的開發環境、安裝 Streamlit 和 建立你的第一個 Streamlit 應用程式 | 每天學一個新的 Streamlit 命令，並用它來建立和部署一個簡單的 Streamlit 應用程序 | 了解重要主題，例如：session state、提高存取資料的效率、透過 caching 管理記憶體、複雜的 Layout 和 其他更多的東西 |
 

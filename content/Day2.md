@@ -1,14 +1,14 @@
-# Building your first Streamlit app
+# 建立你的第一個 Streamlit 應用程式
 
-## Fire up your IDE
+## 啟動你的 IDE
 
-Fire up your IDE whether it be Atom, VS Code or even a cloud IDE such as GitPod or GitHub.dev.
+啟動您的 IDE，無論是 Atom、VS Code 還是雲端 IDE，例如：GitPod 或 GitHub.dev。
 
-Create a file called `streamlit_app.py`
+建立一個新檔案叫做 `streamlit_app.py`。
 
-## Entering your first lines of code
+## 輸入你的第一行程式
 
-To the newly created file, enter the following lines of code:
+在新建立的檔案中，輸入下列程式碼
 
 ```python
 import streamlit as st
@@ -16,16 +16,16 @@ import streamlit as st
 st.write('Hello world!')
 ```
 
-Save the file.
+儲存檔案。
 
-## Fire up the command line terminal
+## 啟動終端機（command line terminal）
 
-To the terminal, enter the following:
+到終端機中，輸入下列指令
 
-```
+```bash
 streamlit run streamlit_app.py
 ```
 
-A browser window should pop-up showing the newly created Streamlit app.
+一個瀏覽器視窗應該會顯示新建立好的 Streamlit 應用程式。
 
-**Congratulations!** You have just created your first Streamlit app!
+**恭喜！**你剛建立了你的第一個 Streamlit 應用程式！

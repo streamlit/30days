@@ -31,7 +31,7 @@ st.header('1. Example of using `with` notation')
 st.subheader('Coffee machine')
 
 with st.form('my_form'):
-    st.write('**Order your coffee**')
+    st.subheader('**Order your coffee**')
     
     # Input widgets
     coffee_bean_val = st.selectbox('Coffee bean', ['Arabica', 'Robusta'])
@@ -80,7 +80,7 @@ st.title('st.form')
 ```
 
 ### First example
-Let's start with the first example, here we'll apply the `st.form` command via the `write` notation. Inside the form, we'll start with writing a subheader `Order your coffee` then create several input widgets (`st.selectbox`, `st.select_slider` and `st.checkbox`) to collect information about the coffee order. Finally, a submit button is created via the `st.form_submit_button` command, which when clicked on will send all user input as a single batch of information to the app for processing.
+Let's start with the first example, here we'll apply the `st.form` command via the `with` notation. Inside the form, we'll start with writing a subheader `Order your coffee` then create several input widgets (`st.selectbox`, `st.select_slider` and `st.checkbox`) to collect information about the coffee order. Finally, a submit button is created via the `st.form_submit_button` command, which when clicked on will send all user input as a single batch of information to the app for processing.
 ```python
 # Full example of using the with notation
 st.header('1. Example of using `with` notation')
@@ -88,7 +88,8 @@ st.subheader('Coffee machine')
 
 with st.form('my_form'):
     st.subheader('**Order your coffee**')
-    
+
+    # Input widgets
     coffee_bean_val = st.selectbox('Coffee bean', ['Arabica', 'Robusta'])
     coffee_roast_val = st.selectbox('Coffee roast', ['Light', 'Medium', 'Dark'])
     brewing_val = st.selectbox('Brewing method', ['Aeropress', 'Drip', 'French press', 'Moka pot', 'Siphon'])

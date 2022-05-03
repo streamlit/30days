@@ -41,3 +41,4 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 Want to help us expand the reach of `#30DaysOfStreamlit` and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
 
 - [Portuguese](https://github.com/franciscoed/30days) (by [franciscoed](https://github.com/franciscoed)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/franciscoed/30days)
+- [Portuguese](https://github.com/dragonchen-tw/30days-zh_TW) (by [DragonChen-TW](https://github.com/dragonchen-tw/)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dragonchen-tw/30days-zh_tw)

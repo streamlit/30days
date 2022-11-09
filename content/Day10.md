@@ -57,7 +57,7 @@ st.write('Your favorite color is ', option)
 ```
 
 ## Next steps
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud).
+Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Community Cloud](https://streamlit.io/cloud).
 
 ## References 
 More about [`st.selectbox`](https://docs.streamlit.io/library/api-reference/widgets/st.selectbox)

@@ -41,6 +41,7 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 Want to help us expand the reach of `#30DaysOfStreamlit` and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
 
 - 🇬🇧 [English](https://github.com/streamlit/30days) (Official): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlit.app)
+- [Chinese](https://github.com/TeddyHuang-00/30days-Chinese) (by [TeddyHuang-00](https://github.com/TeddyHuang-00)): [![30 天学 Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-chinese.streamlit.app)
 - 🇫🇷 [French](https://github.com/streamlit/30days-French) (by [Charly Wargnier](https://github.com/charlyWargnier/)): [![30 Days of Streamlit en Français!](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-french.streamlit.app/)
 - 🇪🇸 [Español](https://github.com/streamlit/30days-spanish/) (by [Emiliano Rosso](https://github.com/arraydude)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-spanish.streamlit.app/)
 - 🇵🇱 [Polish](https://github.com/streamlit/30days-polish) (by [Michał Nowotka](https://github.com/sfc-gh-mnowotka)): [![Streamlit w 30 dni po Polsku](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://w30dni.streamlit.app/)

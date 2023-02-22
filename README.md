@@ -40,7 +40,6 @@ Complete the daily challenges, share your solutions with us on [Twitter](https:/
 
 Want to help us expand the reach of `#30DaysOfStreamlit` and English isn't your primary language? Translate the challenges into your preferred language and link to them below!
 
-- [Chinese (Traditional)](https://github.com/dragonchen-tw/30days-zh_TW) (by [DragonChen-TW](https://github.com/dragonchen-tw/)): [![30 Days Of Streamlit（繁體中文版](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dragonchen-tw/30days-zh_tw)
 - [English](https://github.com/streamlit/30days) (Official): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlit.app)
 - [Español](https://github.com/streamlit/30days-spanish/) (by [Emiliano Rosso](https://github.com/arraydude)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-spanish.streamlit.app/)
 - [French](https://github.com/streamlit/30days-French) (by [Charly Wargnier](https://github.com/charlyWargnier/)): [![30 Days of Streamlit en Français!](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-french.streamlit.app/)

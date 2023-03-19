@@ -1,34 +1,35 @@
-# Uploading your Streamlit app to GitHub
+# # গিটহাবে আপনার স্ট্রিমলিট অ্যাপ আপলোড 
 
-## GitHub
 
-Git is a software for keeping track of all changes made to code (i.e. version control). GitHub is a Git repository hosting service that makes data and code publicly available on the web, which allows team collaboration and allow others to contribute to the repo.
+## গিটহাব
 
-Housing your Streamlit app in a GitHub repository will allow apps to be deployed to the cloud (the next challenge).
+গিট হল একটি সফ্টওয়্যার যা কোডে করা সমস্ত পরিবর্তনের ট্র্যাক রাখার জন্য (যেমন সংস্করণ নিয়ন্ত্রণ)। গিটহাব হল একটি গিট রিপোজিটরি হোস্টিং পরিষেবা যা ওয়েবে সর্বজনীনভাবে ডেটা এবং কোড উপলব্ধ করে, যা টিম সহযোগিতার অনুমতি দেয় এবং অন্যদের রেপোতে অবদান রাখার অনুমতি দেয়।
 
-## Sign up for GitHub
+আপনার স্ট্রিমলিট অ্যাপটিকে একটি গিটহাব সংগ্রহস্থলে রাখা অ্যাপগুলিকে ক্লাউডে স্থাপন করার অনুমতি দেবে (পরবর্তী চ্যালেঞ্জ)।
 
-Firstly, sign up for a [GitHub](https://github.com/) account.
+## গিটহাব-এর জন্য সাইন আপ করুন
 
-## Create a GitHub repository
+প্রথমত, একটি [গিটহাব](https://github.com/) অ্যাকাউন্টের জন্য সাইন আপ করুন।
 
-Follow the following steps to create a GitHub repository:
-- In the top right hand corner, click on the **"+"** icon which should reveal a drop-down menu, then click on **"New repository"** (*Figure 1*).
+## একটি গিটহাব সংগ্রহস্থল তৈরি করুন
 
-- This should bring to a new webpage called **"Create a new repository"**. Under the **"Repository name"** field, enter a name for your repository, for example, `helloworld` (***Figure 2***).
+একটি গিটহাব সংগ্রহস্থল তৈরি করতে নিম্নলিখিত পদক্ষেপগুলি অনুসরণ করুন:
+- উপরের ডানদিকের কোণায়, **"+"** আইকনে ক্লিক করুন যা একটি ড্রপ-ডাউন মেনু প্রকাশ করবে, তারপরে **"নতুন সংগ্রহস্থল"** (*চিত্র 1*) এ ক্লিক করুন।
 
-- Under the **"Initialize this repository with:"** field, tick on **"Add a README file"**.
+- এটি **"একটি নতুন সংগ্রহস্থল তৈরি করুন"** নামে একটি নতুন ওয়েবপেজে আনতে হবে। **"রিপোজিটরি নাম"** ক্ষেত্রের অধীনে, আপনার সংগ্রহস্থলের জন্য একটি নাম লিখুন, উদাহরণস্বরূপ, `হ্যালোওয়ার্ল্ড` (***চিত্র 2***)।
 
-- Finally, click on **"Create repository"** (Figure 3).
+- **"এই রিপোজিটরিটি দিয়ে শুরু করুন:"** ফিল্ডের অধীনে, **"একটি রিডমি  ফাইল যোগ করুন"** এ টিক দিন।
 
-Your newly created repository will be available at `https://github.com/dataprofessor/helloworld` where `dataprofessor` is the username and `helloworld` is the repository name.
+- অবশেষে, **"রিপোজিটরি তৈরি করুন"** (চিত্র ৩) এ ক্লিক করুন।
 
-Below is the screenshot of the newly created repo (Figure 4):
+আপনার নতুন তৈরি করা সংগ্রহস্থল `https://github.com/dataprofessor/helloworld`-এ উপলব্ধ হবে যেখানে `dataprofessor` হল ব্যবহারকারীর নাম এবং `helloworld` হল সংগ্রহস্থলের নাম।
 
-## Upload files to the GitHub repo
+নীচে নতুন তৈরি রেপোর স্ক্রিনশট (চিত্র ৪):
 
-Slightly above the file table and adjacent to the green **Code** button, click on **Add file** > **Upload files** (Figure 5).
+## গিটহাব রেপোতে ফাইল আপলোড করুন
 
-This will bring you to a new webpage where the central box says ***Drag files here to add them to your repository*** and **choose your files**, which you can either drag-and-drop files into this box or click on the **choose your files** link to choose files from your local computer.
+ফাইল টেবিলের সামান্য উপরে এবং সবুজ **কোড** বোতামের পাশে, **ফাইল যোগ করুন** > **ফাইল আপলোড** (চিত্র 5) এ ক্লিক করুন।
 
-Click on **Commit changes** to proceed further (Figure 6).
+এটি আপনাকে একটি নতুন ওয়েবপেজে নিয়ে আসবে যেখানে কেন্দ্রীয় বাক্সে বলা হয়েছে ***Drag files here to add them to your repository*** এবং **আপনার ফাইলগুলি চয়ন করুন**, যেটি আপনি এই বাক্সে ফাইলগুলিকে টেনে-এন্ড-ড্রপ করতে পারেন অথবা আপনার স্থানীয় কম্পিউটার থেকে ফাইলগুলি চয়ন করতে **choose your files** লিঙ্কটিতে ক্লিক করুন৷
+
+আরও এগিয়ে যেতে **Commit changes**-এ ক্লিক করুন (চিত্র 6)।

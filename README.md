@@ -48,3 +48,4 @@ Want to help us expand the reach of `#30DaysOfStreamlit` and English isn't your 
 - [Portuguese](https://github.com/franciscoed/30days) (by [Francisco Edilton](https://github.com/franciscoed)): [![30 Dias de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30dias.streamlit.app/)
 - [Russian](https://github.com/kseniaanske/30days) (by [Ksenia Anske](https://github.com/kseniaanske)): [![30 Дней Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-russian.streamlit.app/)
 - [Hindi](https://github.com/streamlit/30days-Hindi): [![Streamlit के 30 दिन](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-hindi.streamlit.app/)
+- [Bengali](https://github.com/jojo96/30days-Bengali) (by [Ujjayanta](https://github.com/jojo96)): [![৩০ দিনে স্ট্রিমলিট্ ](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-bengali.streamlit.app/)

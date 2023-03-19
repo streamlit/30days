@@ -1,18 +1,19 @@
-# Deploying your Streamlit app with Streamlit Community Cloud
+# স্ট্রিমলিট কমিউনিটি ক্লাউডের সাথে আপনার স্ট্রিমলিট অ্যাপ স্থাপন করা হচ্ছে
 
-## Streamlit Community Cloud
+## স্ট্রিমলিট কমিউনিটি ক্লাউড
 
-[Streamlit Community Cloud](https://streamlit.io/cloud) is a hosting service for easily deploying Streamlit apps.
+[স্ট্রিমলিট কমিউনিটি ক্লাউড](https://streamlit.io/cloud) হল একটি হোস্টিং পরিষেবা যাতে সহজে স্ট্রিমলিট অ্যাপগুলি স্থাপন করা যায়।
 
-## Sign up for Streamlit Community Cloud
+## স্ট্রিমলিট কমিউনিটি ক্লাউডের জন্য সাইন আপ করুন
 
-You can easily sign up for [Streamlit Community Cloud](https://streamlit.io/cloud) by simply logging in with Google or GitHub account.
+আপনি গুগল বা গিটহাব অ্যাকাউন্ট দিয়ে লগ ইন করে সহজেই [স্ট্রিমলিট কমিউনিটি ক্লাউড](https://streamlit.io/cloud) এর জন্য সাইন আপ করতে পারেন।
 
-## Deploy a Streamlit app
+## একটি স্ট্রিমলিট অ্যাপ স্থাপন করুন
 
-To deploy a Streamlit app, do the following:
-1. Sign in with GitHub or Gmail credentials
-2. Pick a repo, branch and file
-3. Click Deploy
+একটি স্ট্রিমলিট অ্যাপ স্থাপন করতে, নিম্নলিখিতগুলি করুন:
+1. গিটহাব বা জিমেইল  শংসাপত্র দিয়ে সাইন ইন করুন৷
+2. একটি রেপো, শাখা এবং ফাইল চয়ন করুন
+3. ডিপ্লয় এ ক্লিক করুন
 
-Then any time you do a git push your app will update immediately.
+তারপরে আপনি যখনই একটি গিট পুশ করবেন আপনার অ্যাপ অবিলম্বে আপডেট হবে।
+

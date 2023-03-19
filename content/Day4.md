@@ -1,7 +1,7 @@
-# Building Streamlit apps with Ken Jee
+# কেন জীর সাথে স্ট্রিমলিট অ্যাপ তৈরি করা
 
-## Watch Ken's video
+## কেনের ভিডিও দেখুন
 
-Let's follow along and watch how [Ken Jee](https://www.youtube.com/c/KenJee1) builds a Streamlit app in this video:
+আসুন অনুসরণ করি এবং এই ভিডিওতে কীভাবে [কেন জী](https://www.youtube.com/c/KenJee1) একটি স্ট্রিমলিট অ্যাপ তৈরি করে দেখুন:
 
-[![Data Science Portfolio Project from Scratch](https://img.youtube.com/vi/Yk-unX4KnV4/0.jpg)](<https://www.youtube.com/watch?v=Yk-unX4KnV4>)]
+[![ স্ক্র্যাচ থেকে ডেটা সায়েন্স পোর্টফোলিও প্রকল্প](https://img.youtube.com/vi/Yk-unX4KnV4/0.jpg)](<https://www.youtube.com/watch?v=Yk- unX4KnV4>)]

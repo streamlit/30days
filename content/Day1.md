@@ -35,7 +35,7 @@ pip install streamlit
 ```
 
 ## **স্ট্রিমলিট ডেমো অ্যাপ চালু করা**
-অ্যাপ চালু করতে(Figure 1):
+অ্যাপ চালু করতে:
 ```bash
 streamlit hello
 ```

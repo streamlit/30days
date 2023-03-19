@@ -20,7 +20,7 @@ md_files = sorted(
 col1, col2, col3 = st.columns((1, 4, 1))
 with col2:
     st.image(Image.open("streamlit-logo-secondary-colormark-darktext.png"))
-st.markdown("# 30 Days of Streamlit")
+st.markdown("# ৩০ দিনে স্ট্রিমলিট্ ")
 
 days_list = [f"Day {x}" for x in md_files]
 
@@ -36,37 +36,37 @@ selected_day = st.selectbox(
     "Start the Challenge 👇", days_list, key="day", on_change=update_params
 )
 
-with st.expander("About the #30DaysOfStreamlit"):
+with st.expander("#30DaysOfStreamlit সম্পর্কিত"):
     st.markdown(
         """
-    The **#30DaysOfStreamlit** is a coding challenge designed to help you get started in building Streamlit apps.
+    **#30DaysOfStreamlit** হল একটি কোডিং চ্যালেঞ্জ যা আপনাকে Streamlit অ্যাপ তৈরি শুরু করতে সাহায্য করার জন্য ডিজাইন করা হয়েছে।
     
-    Particularly, you'll be able to:
-    - Set up a coding environment for building Streamlit apps
-    - Build your first Streamlit app
-    - Learn about all the awesome input/output widgets to use for your Streamlit app
+    বিশেষ করে, আপনি সক্ষম হবেন:
+    - স্ট্রিমলিট্ অ্যাপস তৈরি করার জন্য একটি কোডিং পরিবেশ সেট আপ করুন
+    - আপনার প্রথম স্ট্রিমলিট্ অ্যাপ তৈরি করুন
+    - আপনার স্ট্রিমলিট্ অ্যাপের জন্য ব্যবহার করার জন্য সমস্ত দুর্দান্ত ইনপুট/আউটপুট উইজেট সম্পর্কে জানুন
     """
     )
 
 # Sidebar
 st.sidebar.header("About")
 st.sidebar.markdown(
-    "[Streamlit](https://streamlit.io) is a Python library that allows the creation of interactive, data-driven web applications in Python."
+    "[স্ট্রিমলিট্](https://streamlit.io) হল একটি পাইথন লাইব্রেরি যা পাইথনে ইন্টারেক্টিভ, ডেটা-চালিত ওয়েব অ্যাপ্লিকেশন তৈরি করতে দেয়"
 )
 
 st.sidebar.header("Resources")
 st.sidebar.markdown(
     """
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)
-- [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
-- [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (How to master Streamlit for data science)
+- [স্ট্রিমলিট্ ডকুমেন্টেশন](https://docs.streamlit.io/)
+- [চিট শীট](https://docs.streamlit.io/library/cheatsheet)
+- [বই](https://www.amazon.com/dp/180056550X) (ডেটা সায়েন্সের জন্য স্ট্রিমলিট্ দিয়ে শুরু করা)
+- [ব্লগ](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (ডেটা সায়েন্সের জন্য কীভাবে স্ট্রিমলিট্ আয়ত্ত করবেন)
 """
 )
 
 st.sidebar.header("Deploy")
 st.sidebar.markdown(
-    "You can quickly deploy Streamlit apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks."
+    "আপনি মাত্র কয়েকটি ক্লিকে [স্ট্রিমলিট্ কমিউনিটি ক্লাউড](https://streamlit.io/cloud) ব্যবহার করে দ্রুত স্ট্রিমলিট্ অ্যাপ স্থাপন করতে পারেন।"
 )
 
 # Display content

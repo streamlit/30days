@@ -1,25 +1,25 @@
 # st.button
 
-`st.button` allows the display of a button widget.
+`st.button` একটি বোতাম উইজেট প্রদর্শনের অনুমতি দেয়।
 
-## What we're building?
+## আমরা কি নির্মাণ করছি?
 
-A simple app that performs conditionally prints out alternative messages depending on whether the button was pressed or not.
+একটি সাধারণ অ্যাপ যা শর্তসাপেক্ষে সঞ্চালিত করে বিকল্প বার্তাগুলিকে প্রিন্ট আউট করে তা নির্ভর করে বোতামটি চাপানো হয়েছে কি না।
 
-Flow of the app:
+অ্যাপের প্রবাহ:
 
-1. By default, the app prints `Goodbye`
-2. Upon clicking on the button, the app displays the alternative message `Why hello there`
+1. ডিফল্টরূপে, অ্যাপটি `গুডবাই` প্রিন্ট করে
+2. বাটন ক্লিক করার পরে, অ্যাপটি 'কেন হ্যালো সেখানে' বিকল্প বার্তা প্রদর্শন করে
 
-## Demo app
+## ডেমো অ্যাপ
 
-The deployed Streamlit app should look something like the one shown in the below link:
+স্থাপন করা স্ট্রিমলিট অ্যাপটি নীচের লিঙ্কে দেখানোর মতো দেখতে হবে: 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
+[![স্ট্রিমলিট অ্যাপ](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.button/)
 
-## Code
+## কোড
 
-Here's the code to implement the above mentioned app:
+উপরে উল্লিখিত অ্যাপটি বাস্তবায়ন করার কোড এখানে:
 
 ```python
 import streamlit as st
@@ -32,21 +32,21 @@ else:
      st.write('Goodbye')
 ```
 
-## Line-by-line explanation
+## লাইন-বাই-লাইন ব্যাখ্যা
 
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a header text for the app:
+এটি অ্যাপের জন্য একটি শিরোনাম পাঠ্য তৈরি করে অনুসরণ করা হয়:
 
 ```python
 st.header('st.button')
 ```
 
-Next, we will use conditional statements `if` and `else` for printing alternative messages.
+পরবর্তী, আমরা বিকল্প বার্তা প্রিন্ট করার জন্য শর্তসাপেক্ষ বিবৃতি ব্যবহার করব `if` এবং `else`।
 
 ```python
 if st.button('Say hello'):
@@ -55,33 +55,34 @@ else:
      st.write('Goodbye')
 ```
 
-As we can see from the above code box, the `st.button()` command accepts the `label` input argument of `Say hello`, which is the text that the button displays.
+আমরা উপরের কোড বক্স থেকে দেখতে পাচ্ছি, `st.button()` কমান্ডটি `সে হ্যালো` এর `লেবেল` ইনপুট আর্গুমেন্ট গ্রহণ করে, যা বোতামটি প্রদর্শন করে এমন পাঠ্য।
 
-The `st.write` command is used to print text messages of either `Why hello there` or `Goodbye` depending on whether the button was clicked or not, which is implemented via:
+`st.write` কমান্ডটি `কেন হ্যালো সেখানে` বা `গুডবাই` এর টেক্সট মেসেজ প্রিন্ট করতে ব্যবহার করা হয় বোতামটি ক্লিক করা হয়েছে কি না তার উপর নির্ভর করে, যা এর মাধ্যমে প্রয়োগ করা হয়:
 
 
 ```python
 st.write('Why hello there')
 ```
 
-and
+এবং
 
 ```python
 st.write('Goodbye')
 ```
 
-It is important to note that the above `st.write` statements are placed under the `if` and `else` conditions in order to perform the above mentioned process of alternative displaying of messages
+এটি লক্ষ করা গুরুত্বপূর্ণ যে উপরের `st.write` বিবৃতিগুলিকে `if` এবং `else` শর্তের অধীনে বার্তাগুলির বিকল্প প্রদর্শনের উপরে উল্লিখিত প্রক্রিয়া সম্পাদন করার জন্য স্থাপন করা হয়েছে
 
-## Next steps
+## পরবর্তী পদক্ষেপ
 
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Community Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge.
+এখন যেহেতু আপনি স্থানীয়ভাবে স্ট্রিমলিট অ্যাপ তৈরি করেছেন, এটিকে [স্ট্রিমলিট কমিউনিটি ক্লাউড](https://streamlit.io/cloud) এ স্থাপন করার সময় এসেছে যা একটি আসন্ন চ্যালেঞ্জে শীঘ্রই ব্যাখ্যা করা হবে।
 
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage.
+কারণ এটি আপনার চ্যালেঞ্জের প্রথম সপ্তাহ, আমরা এই ওয়েবপৃষ্ঠার ভিতরেই সম্পূর্ণ কোড (উপরের কোড বক্সে দেখানো হয়েছে) এবং সমাধান (ডেমো অ্যাপ) প্রদান করি।
 
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
+পরবর্তী চ্যালেঞ্জগুলিতে এগিয়ে যাওয়ার জন্য, আপনাকে প্রথমে স্ট্রিমলিট অ্যাপটি প্রয়োগ করার চেষ্টা করার পরামর্শ দেওয়া হচ্ছে।
 
-Don't worry if you get stuck, you can always take a peek at the solution.
+আপনি আটকে গেলে চিন্তা করবেন না, আপনি সবসময় সমাধানটি উঁকি দিতে পারেন।
 
-## References
+## তথ্যসূত্র
 
-Read about [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) in the Streamlit API Documentation.
+স্ট্রিমলিট API ডকুমেন্টেশনে [`st.button`](https://docs.streamlit.io/library/api-reference/widgets/st.button) সম্পর্কে পড়ুন।
+

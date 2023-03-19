@@ -1,26 +1,26 @@
 # st.form
 
-`st.form` creates a form that batches elements together with a "Submit" button.
+`st.form` একটি ফর্ম তৈরি করে যা একটি "Submit" বাটন দিয়ে উপাদানগুলিকে ব্যাচ করে।
 
-Typically, whenever a user interacts with a widget, the Streamlit app is rerun.
+সাধারণত, যখনই একজন ব্যবহারকারী একটি উইজেটের সাথে ইন্টারঅ্যাক্ট করে, স্ট্রিমলিট অ্যাপটি পুনরায় চালু হয়।
 
-A form is a container that visually groups other elements and widgets together, and contains a Submit button. Herein, a user can interacts with one or more widgets for as many times as they like without causing a rerun. Finally, when the form's Submit button is pressed, all widget values inside the form will be sent to Streamlit in a single batch.
+একটি ফর্ম হল একটি ধারক যা দৃশ্যত অন্যান্য উপাদান এবং উইজেটগুলিকে একত্রে গোষ্ঠীবদ্ধ করে এবং একটি জমা বোতাম ধারণ করে৷ এখানে, একজন ব্যবহারকারী পুনঃরান না ঘটিয়ে এক বা একাধিক উইজেটের সাথে যতবার খুশি ততবার ইন্টারঅ্যাক্ট করতে পারে। অবশেষে, যখন ফর্মের জমা দেওয়ার বোতামটি চাপা হয়, তখন ফর্মের ভিতরের সমস্ত উইজেট মান একক ব্যাচে স্ট্রিমলিটে পাঠানো হবে।
 
-To add elements to a form object, you can use the `with` notation (preferred) or you could use it as an object notation by just calling methods directly on the form (by first assigning it to a variable and subsequently applying Streamlit methods on it). See in the example app.
+একটি ফর্ম অবজেক্টে উপাদান যোগ করতে, আপনি `সহ` স্বরলিপি ব্যবহার করতে পারেন (পছন্দের) অথবা আপনি ফর্মে সরাসরি পদ্ধতিগুলি কল করে এটিকে অবজেক্ট নোটেশন হিসেবে ব্যবহার করতে পারেন (প্রথমে এটি একটি ভেরিয়েবলে বরাদ্দ করে এবং পরবর্তীতে স্ট্রিমলিট পদ্ধতি প্রয়োগ করে এটা)। উদাহরণ অ্যাপে দেখুন।
 
-Forms have a few constraints:
-- Every form must contain a `st.form_submit_button`.
-- `st.button` and `st.download_button` cannot be added to a form.
-- Forms can appear anywhere in your app (sidebar, columns, etc), but they cannot be embedded inside other forms.
+ফর্মের কিছু সীমাবদ্ধতা আছে:
+- প্রতিটি ফর্মে অবশ্যই একটি `st.form_submit_button` থাকতে হবে।
+- `st.button` এবং `st.download_button` কোনো ফর্মে যোগ করা যাবে না।
+- ফর্মগুলি আপনার অ্যাপের যে কোনও জায়গায় (সাইডবার, কলাম, ইত্যাদি) প্রদর্শিত হতে পারে তবে সেগুলি অন্য ফর্মগুলির মধ্যে এম্বেড করা যাবে না৷
 
-For more information about forms, check out our [blog post](https://blog.streamlit.io/introducing-submit-button-and-forms/).
+ফর্ম সম্পর্কে আরও তথ্যের জন্য দেখুন [ব্লগ পোস্ট](https://blog.streamlit.io/introducing-submit-button-and-forms/).
 
-## Demo app
+## ডেমো অ্যাপ
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.form/)
 
-## Code
-Here's how to use `st.form`:
+## কোড
+এখানে কিভাবে `st.form` ব্যবহার করবেন:
 ```python
 import streamlit as st
 
@@ -68,19 +68,19 @@ form.form_submit_button('Submit')
 st.write('Selected value: ', selected_val)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## লাইন-বাই-লাইন ব্যাখ্যা
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a title text for the app:
+এটি অ্যাপের জন্য একটি টাইটেল পাঠ্য তৈরি করে অনুসরণ করা হয়:
 ```python
 st.title('st.form')
 ```
 
-### First example
-Let's start with the first example, here we'll apply the `st.form` command via the `with` notation. Inside the form, we'll start with writing a subheader `Order your coffee` then create several input widgets (`st.selectbox`, `st.select_slider` and `st.checkbox`) to collect information about the coffee order. Finally, a submit button is created via the `st.form_submit_button` command, which when clicked on will send all user input as a single batch of information to the app for processing.
+### প্রথম উদাহরণ
+প্রথম উদাহরণ দিয়ে শুরু করা যাক, এখানে আমরা `st.form` কমান্ডটি `with` নোটেশনের মাধ্যমে প্রয়োগ করব। ফর্মের ভিতরে, আমরা একটি উপশিরোনাম লিখতে শুরু করব `আপনার কফি অর্ডার করুন` তারপর কফির অর্ডার সম্পর্কে তথ্য সংগ্রহ করতে বেশ কিছু ইনপুট উইজেট (`st.selectbox`, `st.select_slider` এবং `st.checkbox`) তৈরি করব। অবশেষে, `st.form_submit_button` কমান্ডের মাধ্যমে একটি সাবমিট বোতাম তৈরি করা হয়, যেটিতে ক্লিক করা হলে তা প্রক্রিয়াকরণের জন্য অ্যাপে তথ্যের একক ব্যাচ হিসাবে সমস্ত ব্যবহারকারীর ইনপুট পাঠাবে।
 ```python
 # Full example of using the with notation
 st.header('1. Example of using `with` notation')
@@ -101,7 +101,8 @@ with st.form('my_form'):
     submitted = st.form_submit_button('Submit')
 ```
 
-Next, we'll add the logic of what happen's after the submit button is clicked on. By default, whenever the Streamlit app is loaded the `else` statement will be run and we see a message `☝️ Place your order!`. Whereas upon clicking on the submit button, all user provided input via the various widgets are stored in several variables (e.g. `coffee_bean_val`, `coffee_roast_val`, etc.) and printed out via the `st.markdown` command with the help of f-string.
+এরপরে, সাবমিট বোতামে ক্লিক করার পর কী ঘটবে তার যুক্তি যোগ করব। ডিফল্টরূপে, যখনই স্ট্রিমলিট অ্যাপটি লোড হবে তখনই `অন্য` বিবৃতিটি চালানো হবে এবং আমরা একটি বার্তা দেখতে পাব `☝️ আপনার অর্ডার দিন!`৷ যেখানে সাবমিট বোতামে ক্লিক করার পরে, বিভিন্ন উইজেটের মাধ্যমে সমস্ত ব্যবহারকারীর দেওয়া ইনপুট বিভিন্ন ভেরিয়েবলে সংরক্ষণ করা হয় (যেমন `coffee_bean_val`, `coffee_roast_val` ইত্যাদি) এবং f এর সাহায্যে `st.markdown` কমান্ডের মাধ্যমে প্রিন্ট আউট করা হয় f-string দিয়ে।
+
 ```python
 if submitted:
     st.markdown(f'''
@@ -118,8 +119,8 @@ else:
 ```
 
 
-### Second example
-Let's now proceed to the second example on using the `st.form` as an object notation. Here, the `st.form` command is assigned to the `form` variable. Subsequently, various Streamlit commands such as `slider` or `form_submit_button` is applied on the `form` variable.
+### দ্বিতীয় উদাহরণ
+এখন অবজেক্ট নোটেশন হিসেবে `st.form` ব্যবহার করার দ্বিতীয় উদাহরণে যাওয়া যাক। এখানে, `st.form` কমান্ডটি `form` ভেরিয়েবলে বরাদ্দ করা হয়েছে। পরবর্তীকালে, বিভিন্ন Streamlit কমান্ড যেমন `slider` বা `form_submit_button` `form` ভেরিয়েবলে প্রয়োগ করা হয়।
 ```python
 # Short example of using an object notation
 st.header('2. Example of object notation')
@@ -131,6 +132,6 @@ form.form_submit_button('Submit')
 st.write('Selected value: ', selected_val)
 ```
 
-## Further reading
+## আরও পড়া
 - [`st.form`](https://docs.streamlit.io/library/api-reference/control-flow/st.form)
-- [Introducing Submit button and Forms](https://blog.streamlit.io/introducing-submit-button-and-forms/)
+- [স্ট্রিমলিট বাটন এবং ফর্ম](https://blog.streamlit.io/introducing-submit-button-and-forms/)

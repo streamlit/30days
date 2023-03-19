@@ -1,19 +1,19 @@
 # st.experimental_get_query_params
 
-`st.experimental_get_query_params` allows the retrieval of query parameters directly from the URL of the user's browser.
+`st.experimental_get_query_params` ব্যবহারকারীর ব্রাউজারের URL থেকে সরাসরি কোয়েরি প্যারামিটার পুনরুদ্ধারের অনুমতি দেয়।
 
-## Demo app
+## ডেমো অ্যাপ
 
-1. The following link loads the demo app with no query parameters (notice the error message):
+১. নিচের লিঙ্কটি কোন কোয়েরি প্যারামিটার ছাড়াই ডেমো অ্যাপ লোড করে (ত্রুটির বার্তাটি লক্ষ্য করুন):
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.experimental_get_query_params/)
 
-2. The following link loads the demo app with query parameters (no error message here):
+২. নিম্নলিখিত লিঙ্কটি ডেমো অ্যাপটিকে কোয়েরি প্যারামিটার সহ লোড করে (এখানে কোনও ত্রুটি বার্তা নেই):
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://share.streamlit.io/dataprofessor/st.experimental_get_query_params/?firstname=Jack&surname=Beanstalk)
 
-## Code
-Here's how to use `st.experimental_get_query_params`:
+## কোড
+এখানে কিভাবে ব্যবহার করতে হয় `st.experimental_get_query_params`:
 ```python
 import streamlit as st
 
@@ -47,24 +47,24 @@ surname = st.experimental_get_query_params()['surname'][0]
 st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## লাইন-বাই-লাইন ব্যাখ্যা
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 ```python
 import streamlit as st
 ```
 
-Next, we'll give the app a title:
+এর পরে, আমরা অ্যাপটিকে একটি শিরোনাম দেব:
 ```python
 st.title('st.experimental_get_query_params')
 ```
 
-Let's also add an About drop-down box:
+এর একটি ড্রপ-ডাউন বক্সও যোগ করা যাক:
 ```python
 with st.expander('About this app'):
   st.write("`st.experimental_get_query_params` allows the retrieval of query parameters directly from the URL of the user's browser.")
 ```
 
-Then, we'll provide instructions to visitors of the app on how they can pass query parameters directly to the URL:
+তারপর, আমরা অ্যাপের দর্শকদের সরাসরি URL-এ কোয়েরি প্যারামিটারগুলি কীভাবে পাস করতে পারে সে সম্পর্কে নির্দেশনা প্রদান করব:
 ```python
 # 1. Instructions
 st.header('1. Instructions')
@@ -77,14 +77,14 @@ such that it becomes
 ''')
 ```
 
-Subsequently, we'll display the contents of the `st.experimental_get_query_params` command.
+পরবর্তীকালে, আমরা `st.experimental_get_query_params` কমান্ডের বিষয়বস্তু প্রদর্শন করব।
 ```python
 # 2. Contents of st.experimental_get_query_params
 st.header('2. Contents of st.experimental_get_query_params')
 st.write(st.experimental_get_query_params())
 ```
 
-Finally, we'll select and display selective information from the URL's query parameter:
+অবশেষে, আমরা URL এর ক্যোয়ারী প্যারামিটার থেকে নির্বাচনী তথ্য নির্বাচন করব এবং প্রদর্শন করব:
 ```python
 # 3. Retrieving and displaying information from the URL
 st.header('3. Retrieving and displaying information from the URL')
@@ -95,5 +95,5 @@ surname = st.experimental_get_query_params()['surname'][0]
 st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
-## Further reading
+## আরও পড়া
 - [`st.experimental_get_query_params`](https://docs.streamlit.io/library/api-reference/utilities/st.experimental_get_query_params)

@@ -1,19 +1,19 @@
 # st.session_state
 
-We define access to a Streamlit app in a browser tab as a session. For each browser tab that connects to the Streamlit server, a new session is created. Streamlit reruns your script from top to bottom every time you interact with your app. Each reruns takes place in a blank slate: no variables are shared between runs.
+আমরা একটি অধিবেশন হিসাবে একটি ব্রাউজার ট্যাবে একটি স্ট্রিমলিট  অ্যাপ্লিকেশন অ্যাক্সেস করবো।  স্ট্রিমলিট সার্ভারের সাথে সংযোগকারী প্রতিটি ব্রাউজার ট্যাবের জন্য, একটি নতুন সেশন তৈরি করা হয়। আপনি যখনই আপনার অ্যাপের সাথে ইন্টারঅ্যাক্ট করেন তখনই স্ট্রিমলিট আপনার স্ক্রিপ্ট উপরে থেকে নীচে পুনরায় চালায়। প্রতিটি পুনঃরান একটি ফাঁকা স্লেটে সঞ্চালিত হয়: রানের মধ্যে কোন ভেরিয়েবল ভাগ করা হয় না।
 
-Session State is a way to share variables between reruns, for each user session. In addition to the ability to store and persist state, Streamlit also exposes the ability to manipulate state using Callbacks.
+সেশন স্টেট হল প্রতিটি ব্যবহারকারীর সেশনের জন্য রিরানগুলির মধ্যে ভেরিয়েবল শেয়ার করার একটি উপায়। স্টেট সঞ্চয় এবং স্থায়ী করার ক্ষমতা ছাড়াও, স্ট্রিমলিট কলব্যাক ব্যবহার করে স্টেট ম্যানিপুলেট করার ক্ষমতাও প্রকাশ করে।
 
-In this tutorial, we will illustrate the usage of Session State and Callbacks as we build a weight conversion app.
+এই টিউটোরিয়ালে, আমরা একটি ওজন রূপান্তর অ্যাপ তৈরি করার সময় সেশন স্টেট এবং কলব্যাকের ব্যবহার ব্যাখ্যা করব।
 
-`st.session_state` allows the implementation of session state in a Streamlit app.
+`st.session_state` একটি Streamlit অ্যাপে সেশন স্টেট বাস্তবায়নের অনুমতি দেয়।   
 
-## Demo app
+## ডেমো অ্যাপ
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.session_state/)
 
-## Code
-Here's how to use `st.session_state`:
+## কোড
+এইভাবে ব্যবহার করুন `st.session_state`:
 ```python
 import streamlit as st
 
@@ -35,18 +35,18 @@ st.header('Output')
 st.write("st.session_state object:", st.session_state)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## লাইন-বাই-লাইন ব্যাখ্যা
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 ```python
 import streamlit as st
 ```
 
-Firstly, we'll start by creating the title of the app:
+প্রথমত, আমরা অ্যাপটির শিরোনাম তৈরি করে শুরু করব:
 ```python
 st.title('st.session_state')
 ```
 
-Next, we define custom functions for the weight conversion from lbs to kg and vice versa:
+এর পরে, আমরা পাউন্ড থেকে কেজি ওজন রূপান্তরের বা তার বিপরীত করার জন্য কাস্টম ফাংশন সংজ্ঞায়িত করি:
 ```python
 def lbs_to_kg():
   st.session_state.kg = st.session_state.lbs/2.2046
@@ -54,7 +54,7 @@ def kg_to_lbs():
   st.session_state.lbs = st.session_state.kg*2.2046
 ```
 
-Here, we use `st.number_input` to accept numerical inputs of the weight values:
+এখানে, আমরা ওজন মানের সংখ্যাসূচক ইনপুট গ্রহণ করতে `st.number_input` ব্যবহার করি:
 ```python
 st.header('Input')
 col1, spacer, col2 = st.columns([2,1,2])
@@ -63,16 +63,18 @@ with col1:
 with col2:
   kilogram = st.number_input("Kilograms:", key = "kg", on_change = kg_to_lbs)
 ```
-The above 2 custom functions will be called upon as soon as a numerical value is entered into the number box created using the `st.number_input` command. Notice how the `on_change` option specifies the 2 custom functions `lbs_to_kg` and `kg_to_lbs`). 
 
-In a nutshell, upon entering a number into the `st.number_input` box the number is converted by these custom functions.
+উপরের 2টি কাস্টম ফাংশনগুলিকে 'st.number_input` কমান্ড ব্যবহার করে তৈরি করা নম্বর বাক্সে একটি সংখ্যাসূচক মান প্রবেশ করানো হবে। লক্ষ্য করুন কিভাবে `on_change` বিকল্পটি 2টি কাস্টম ফাংশন `lbs_to_kg` এবং `kg_to_lbs` নির্দিষ্ট করে।
 
-Finally, the weight values in `kg` and `lbs` units as stored in the session state as `st.session_state.kg` and `st.session_state.lbs` will be printed out via `st.write`:
+সংক্ষেপে, `st.number_input` বাক্সে একটি সংখ্যা প্রবেশ করালে সংখ্যাটি এই কাস্টম ফাংশন দ্বারা রূপান্তরিত হয়।
+
+পরিশেষে, `kg` এবং `lbs` ইউনিটের ওজনের মানগুলি সেশন স্টেটে `st.session_state.kg` এবং `st.session_state.lbs` হিসাবে সংরক্ষিত এর মাধ্যমে প্রিন্ট করা হবে
+`st.write`:
 ```python
 st.header('Output')
 st.write("st.session_state object:", st.session_state)
 ```
 
-## Further reading
-- [Session State](https://docs.streamlit.io/library/api-reference/session-state)
-- [Add statefulness to apps](https://docs.streamlit.io/library/advanced-features/session-state)
+## আরও পড়া
+- [সেশন স্টেট](https://docs.streamlit.io/library/api-reference/session-state)
+- [অ্যাপ্লিকেশানগুলিতে স্টেট যুক্ত করুন](https://docs.streamlit.io/library/advanced-features/session-state)

@@ -1,38 +1,38 @@
-# Build a draggable and resizable dashboard with Streamlit Elements
+# স্ট্রিমলিট এলিমেন্টের সাথে একটি টেনে আনতে যোগ্য এবং পরিবর্তনযোগ্য ড্যাশবোর্ড তৈরি করুন
 
-Streamlit Elements is a third-party component made by [okld](https://github.com/okld) that gives you the tools to compose beautiful applications and dashboards with Material UI widgets, Monaco editor (Visual Studio Code), Nivo charts, and more.
+Streamlit Elements হল [okld](https://github.com/okld) দ্বারা তৈরি একটি তৃতীয়-পক্ষের উপাদান যা আপনাকে উপাদান UI উইজেট, মোনাকো সম্পাদক (ভিজ্যুয়াল স্টুডিও কোড), নিভো চার্ট সহ সুন্দর অ্যাপ্লিকেশন এবং ড্যাশবোর্ড রচনা করার সরঞ্জাম এবং আরো অনেক কিছু দেয়।
 
-## How to use?
+## কিভাবে ব্যবহার করে?
 
-### Installation
+### স্থাপন
 
-The first step is to install Streamlit Elements in your environment:
+প্রথম ধাপ হল আপনার পরিবেশে স্ট্রিমলিট  উপাদানগুলি ইনস্টল করা:
 
 ```bash
 pip install streamlit-elements==0.1.*
 ```
 
-It is recommended to pin the version to `0.1.*`, as future versions might introduce breaking API changes.
+ভার্সনটিকে `০.১ .*`-এ পিন করার পরামর্শ দেওয়া হচ্ছে, কারণ ভবিষ্যত ভার্সনগুলি ব্রেকিং API পরিবর্তন আনতে পারে।
 
-### Usage
+### ব্যবহার
 
-You can refer to [Streamlit Elements README](https://github.com/okld/streamlit-elements#getting-started) for an in-depth usage guide.
+আপনি গভীরভাবে ব্যবহারের নির্দেশিকাটির জন্য [স্ট্রিমলিট এলিমেন্টস রিডমি ](https://github.com/okld/streamlit-elements#getting-started) উল্লেখ করতে পারেন।
 
-## What are we building?
+## আমরা কি নির্মাণ করছি?
 
-The goal of today's challenge is to create a dashboard composed of three Material UI cards:
+আজকের চ্যালেঞ্জের লক্ষ্য হল তিনটি মেটেরিয়াল UI কার্ডের সমন্বয়ে একটি ড্যাশবোর্ড তৈরি করা:
 
-- A first card with a Monaco code editor to input some data ;
-- A second card to display that data in a Nivo Bump chart ;
-- A third card to show a YouTube video URL defined with a `st.text_input`.
+- কিছু ডেটা ইনপুট করার জন্য একটি মোনাকো কোড সম্পাদক সহ একটি প্রথম কার্ড;
+- একটি নিভো বাম্প চার্টে সেই ডেটা প্রদর্শনের জন্য একটি দ্বিতীয় কার্ড;
+- একটি 'st.text_input' দিয়ে সংজ্ঞায়িত একটি ইউটিউব  ভিডিও URL দেখানোর জন্য একটি তৃতীয় কার্ড৷
 
-You can use data generated from Nivo Bump demo there, in 'data' tab: https://nivo.rocks/bump/.
+আপনি সেখানে নিভো বাম্প ডেমো থেকে উৎপন্ন ডেটা ব্যবহার করতে পারেন, 'ডেটা' ট্যাবে: https://nivo.rocks/bump/।
 
-## Demo app
+## ডেমো অ্যাপ
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/okld/streamlit-elements-demo/main)
 
-## Code with line-by-line explanation
+## লাইন-বাই-লাইন ব্যাখ্যা সহ কোড
 
 ```python
 # First, we will need the following imports for our application.
@@ -264,6 +264,6 @@ with elements("demo"):
 
 ```
 
-## Any question?
+## কোন প্রশ্ন?
 
-Feel free to ask any question regarding Streamlit Elements or this challenge there: [Streamlit Elements Topic](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616)
+স্ট্রিমলিট  এলিমেন্টস বা সেখানে এই চ্যালেঞ্জ সম্পর্কিত যেকোনো প্রশ্ন নির্দ্বিধায় করুন: [স্ট্রিমলিট এলিমেন্টস বিষয়](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material- ui-nivo-charts-and-more/24616) 

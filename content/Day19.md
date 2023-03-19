@@ -1,17 +1,17 @@
-# How to layout your Streamlit app
+# কিভাবে আপনার স্ট্রিমলিট অ্যাপ পরিকল্পনা করবেন
 
-In this tutorial, we're going to use the following commands to layout our Streamlit app:
-- `st.set_page_config(layout="wide")` - Displays the contents of the app in wide mode (otherwise by default, the contents are encapsulated in a fixed width box.
-- `st.sidebar` - Places the widgets or text/image displays in the sidebar.
-- `st.expander` - Places text/image displays inside a collapsible container box.
-- `st.columns` - Creates a tabular space (or column) within which contents can be placed inside.
+এই টিউটোরিয়ালে, আমরা আমাদের স্ট্রিমলিট অ্যাপ লেআউট করতে নিম্নলিখিত কমান্ডগুলি ব্যবহার করতে যাচ্ছি:
+- `st.set_page_config(layout="wide")` - অ্যাপের বিষয়বস্তুগুলি প্রশস্ত মোডে প্রদর্শন করে (অন্যথায় গতানুগতিকভাবে বিষয়বস্তুগুলি একটি নির্দিষ্ট প্রস্থের বাক্সে এনক্যাপসুলেট করা হয়।)
+- `st.sidebar` - সাইডবারে উইজেট বা টেক্সট/ইমেজ ডিসপ্লে রাখে।
+- `st.expander` - একটি সংকোচনযোগ্য কন্টেইনার বাক্সের ভিতরে পাঠ্য/চিত্র প্রদর্শন করে।
+- `st.columns` - একটি টেবুলার স্থান (বা কলাম) তৈরি করে যার মধ্যে বিষয়বস্তু ভিতরে রাখা যেতে পারে।
 
-## Demo app
+## ডেমো অ্যাপ
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-layout/)
 
 ## Code
-Here's how to customize the layout of your Streamlit app:
+আপনার স্ট্রিমলিট অ্যাপের লেআউটটি কীভাবে কাস্টমাইজ করবেন তা এখানে:
 ```python
 import streamlit as st
 
@@ -51,30 +51,30 @@ with col3:
     st.write('👈 Please choose your favorite **food**!')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## লাইন-বাই-লাইন ব্যাখ্যা
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 ```python
 import streamlit as st
 ```
 
-We'll start by first defining the page layout to be displayed in the `wide` mode, which allows the page content to expand to the browser's width.
+আমরা প্রথমে পৃষ্ঠার বিন্যাসটি সংজ্ঞায়িত করে শুরু করব যা প্রদর্শিত হবে `wide` মোড ব্যবহার করে, যা পৃষ্ঠার বিষয়বস্তুকে ব্রাউজারের প্রস্থে প্রসারিত করতে দেয়।
 ```python
 st.set_page_config(layout="wide")
 ```
 
-Next, we'll give the Streamlit app a title.
+তারপর টাইটেল টেক্সট বানান:
 ```python
 st.title('How to layout your Streamlit app')
 ```
 
-An expandable box titled `About this app` is placed under the app title. Upon expansion, we'll see additional details inside.
+শিরোনাম একটি প্রসারিত বাক্স `About this app` আছে এবং এটি অ্যাপ শিরোনামের অধীনে রয়েছে। সম্প্রসারণের পরে, আমরা ভিতরে অতিরিক্ত বিবরণ দেখতে পাব।
 ```python
 with st.expander('About this app'):
   st.write('This app shows the various ways on how you can layout your Streamlit app.')
   st.image('https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png', width=250)
 ```
 
-Input widgets for accepting user input is placed in the sidebar as specified by using the `st.sidebar` command before the Streamlit commands `text_input` and `selectbox`. Input values entered or selected by the user are assigned and stored in the `user_name`, `user_emoji` and `user_food` variables.
+ব্যবহারকারীর ইনপুট গ্রহণ করার জন্য ইনপুট উইজেটগুলি সাইডবারে স্থাপন করা হয় `st.sidebar` কমান্ড ব্যবহার করে স্ট্রিমলিট কমান্ডস `text_input` and `selectbox` এগুলোর আগে। ব্যবহারকারীর দ্বারা প্রবেশ করা বা নির্বাচিত ইনপুট মানগুলি বরাদ্দ করা এবং সংরক্ষণ করা হয়৷ `user_name`, `user_emoji` এবং `user_food` ভেরিয়েবল দ্বারা।
 ```python
 st.sidebar.header('Input')
 user_name = st.sidebar.text_input('What is your name?')
@@ -82,7 +82,8 @@ user_emoji = st.sidebar.selectbox('Choose an emoji', ['', '😄', '😆', '😊'
 user_food = st.sidebar.selectbox('What is your favorite food?', ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
 ```
 
-Finally, we'll create 3 columns using the `st.columns` command which corresponds to `col1`, `col2` and `col3`. Then, we assign contents to each of the column by creating individual code blocks starting with the `with` statement. Underneath this, we create conditional statements that display 1 of 2 alternative text depending on whether the user had provided their input data (specified in the sidebar) or not. By default, the page displays text under the `else` statement. Upon providing user input, the corresponding information that the user gives to the app is displayed under the `Output` header text.
+অবশেষে, আমরা ব্যবহার করে ৩টি কলাম তৈরি করব `st.columns` ব্যবহার করে `col1`, `col2` এবং `col3`। তারপর, আমরা প্রতিটি কলামে বিষয়বস্তু বরাদ্দ করি আলাদা আলাদা কোড ব্লক তৈরি করে `with` বিবৃতি দিয়ে। এর নীচে, আমরা শর্তসাপেক্ষ বিবৃতি তৈরি করি যা ব্যবহারকারী তাদের ইনপুট ডেটা (সাইডবারে নির্দিষ্ট) প্রদান করেছে কি না তার উপর নির্ভর করে ২টি বিকল্প পাঠ্যের মধ্যে ১টি প্রদর্শন করে। ডিফল্টরূপে, পৃষ্ঠাটি `else` বিবৃতির অধীনে পাঠ্য প্রদর্শন করে। ব্যবহারকারীর ইনপুট প্রদান করার পরে, ব্যবহারকারী অ্যাপে যে সংশ্লিষ্ট তথ্য দেয় তা `Output` শিরোনামের পাঠ্যের অধীনে প্রদর্শিত হয়।
+
 ```python
 st.header('Output')
 
@@ -108,5 +109,5 @@ with col3:
 ```
 It is also worthy to note that `f` strings were used to combine pre-canned text together with the user provided values. 
 
-## Further reading
-- [Layouts and Containers](https://docs.streamlit.io/library/api-reference/layout)
+## আরও পড়া
+- [লেআউট এবং কন্টেইনার](https://docs.streamlit.io/library/api-reference/layout)

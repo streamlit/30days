@@ -1,24 +1,24 @@
 # streamlit-shap
 
-[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) is a Streamlit component that provides a wrapper to display [SHAP](https://github.com/slundberg/shap) plots in [Streamlit](https://streamlit.io/). 
+[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) একটি স্ট্রিমলিট উপাদান যা [SHAP](https://github.com/slundberg/shap) প্লটগুলি প্রদর্শনের জন্য একটি মোড়ক সরবরাহ করে [স্ট্রিমলিট](https://streamlit.io/)।
 
-The library is developed by our in-house staff [Snehan Kekre](https://github.com/snehankekre) who also maintains the [Streamlit Documentation](https://docs.streamlit.io/) website.
+লাইব্রেরিটি আমাদের ইন-হাউস স্টাফ [স্নেহান কেকরে](https://github.com/snehankekre) দ্বারা তৈরি করা হয়েছে, যিনি [স্ট্রিমলিট ডকুমেন্টেশন](https://docs.streamlit.io/) ওয়েবসাইটও রক্ষণাবেক্ষণ করেন।
 
-Firstly, install Streamlit (of course!) then pip install the `streamlit-shap` library:
+প্রথমে, স্ট্রিমলিট ইনস্টল করুন (অবশ্যই!) তারপর পিপ ইন্সটল করুন `streamlit-shap` লাইব্রেরি:
 ```bash
 pip install streamlit
 pip install streamlit-shap
 ```
 
-There are also other prerequisite libraries to install (e.g. `matplotlib`, `pandas`, `scikit-learn` and `xgboost`) if you haven't yet done so.
+এছাড়াও ইনস্টল করার জন্য অন্যান্য পূর্বশর্ত লাইব্রেরি রয়েছে (যেমন `matplotlib`, `pandas`, `scikit-learn` এবং `xgboost`) যদি আপনি এখনও তা না করে থাকেন।
 
 
-## Demo app
+## ডেমো অ্যাপ
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-shap/)
+[![স্ট্রিমলিট অ্যাপ](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-shap/)
 
-## Code
-Here's how to use `streamlit-shap`:
+## কোড
+এখানে কিভাবে `স্ট্রিমলিট-শেপ` ব্যবহার করবেন:
 ```python
 import streamlit as st
 from streamlit_shap import st_shap
@@ -104,19 +104,20 @@ import numpy as np
 import pandas as pd
 ```
 
-Next, we'll set the page layout to be wide such that contents in the Streamlit app can spread the full page width.
+এর পরে, আমরা পৃষ্ঠার বিন্যাসটিকে এমনভাবে প্রশস্ত করতে সেট করব যাতে স্ট্রিমলিট অ্যাপের বিষয়বস্তু পুরো পৃষ্ঠার প্রস্থকে ছড়িয়ে দিতে পারে।
 ```python
 st.set_page_config(layout="wide")
 ```
 
-Then, we'll load in a dataset from the `shap` library:
+তারপর, আমরা `shap` লাইব্রেরি থেকে একটি ডেটাসেটে লোড করব:
 ```python
 @st.experimental_memo
 def load_data():
     return shap.datasets.adult()
 ```
 
-Subsequently, we'll definite a function called `load_model` for taking in the `X, y` matrix pair as input, perform data splitting to train/test sets, constructing a `DMatrix` and build an XGBoost model.
+
+পরবর্তীকালে, আমরা ইনপুট হিসাবে `X, y` ম্যাট্রিক্স জোড়া নেওয়ার জন্য `load_model` নামক একটি ফাংশন নির্ধারণ করব, ট্রেন/পরীক্ষা সেটে ডেটা বিভাজন সম্পাদন করব, একটি `DMatrix` নির্মাণ করব এবং একটি XGBoost মডেল তৈরি করব।
 ```python
 @st.experimental_memo
 def load_model(X, y):
@@ -135,12 +136,12 @@ def load_model(X, y):
     return model
 ```
 
-The title of the Streamlit app is then displayed:
+স্ট্রিমলিট অ্যাপের শিরোনামটি তারপর প্রদর্শিত হয়:
 ```python
 st.title("`streamlit-shap` for displaying SHAP plots in a Streamlit app")
 ```
 
-An about expander box is implemented to provide details of the app:
+অ্যাপটির বিশদ বিবরণ দেওয়ার জন্য একটি সম্প্রসারণকারী বাক্স প্রয়োগ করা হয়েছে:
 ```python
 with st.expander('About the app'):
     st.markdown('''[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) is a Streamlit component that provides a wrapper to display [SHAP](https://github.com/slundberg/shap) plots in [Streamlit](https://streamlit.io/). 
@@ -148,7 +149,7 @@ with st.expander('About the app'):
                 ''')
 ```
 
-Here, we'll display the header text along with expander box of the `X` and `y` variables of the Input data:
+এখানে, আমরা ইনপুট ডেটার `X` এবং `y` ভেরিয়েবলের এক্সপেন্ডার বক্স সহ হেডার টেক্সট প্রদর্শন করব:
 ```python
 st.header('Input data')
 X,y = load_data()
@@ -162,12 +163,13 @@ with st.expander('y'):
     st.dataframe(y)
 ```
 
-Here, we'll display the header text for the forthcoming SHAP output:
+এখানে, আমরা আসন্ন SHAP আউটপুটের জন্য হেডার টেক্সট প্রদর্শন করব:
 ```python
 st.header('SHAP output')
 ```
 
-The XGBoost model is then built by using the `load_model` function that was just implemented above. Finally, 
+
+XGBoost মডেলটি 'load_model' ফাংশন ব্যবহার করে তৈরি করা হয়েছে যা উপরে প্রয়োগ করা হয়েছে। অবশেষে,
 ```python
 # train XGBoost model
 X,y = load_data()
@@ -176,7 +178,7 @@ X_display,y_display = shap.datasets.adult(display=True)
 model = load_model(X, y)
 ```
 
-Here, we'll compute the SHAP values, which are then used to create the Waterfall and Beeswarm plots.
+এখানে, আমরা SHAP মানগুলি গণনা করব, যা ওয়াটারফল এবং বিস্বার্ম প্লটস তৈরি করতে ব্যবহৃত হয়।
 ```python
 # compute SHAP values
 explainer = shap.Explainer(model, X)
@@ -188,7 +190,7 @@ with st.expander('Beeswarm plot'):
     st_shap(shap.plots.beeswarm(shap_values), height=300)
 ```
 
-Finally, the Tree SHAP algorithms is used to explain the output of ensemble tree models via the `shap.TreeExplainer` command and visualized via the `shap.force_plot` command:
+অবশেষে, Tree SHAP অ্যালগরিদমগুলি `shap.TreeExplainer` কমান্ডের মাধ্যমে এনসেম্বল ট্রি মডেলের আউটপুট ব্যাখ্যা করতে ব্যবহৃত হয় এবং `shap.force_plot` কমান্ডের মাধ্যমে ভিজ্যুয়ালাইজ করা হয়:
 ```python
 explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X)
@@ -200,6 +202,6 @@ with st.expander('Force plot'):
     st_shap(shap.force_plot(explainer.expected_value, shap_values[:1000,:], X_display.iloc[:1000,:]), height=400, width=1000)
 ```
 
-## Further reading
+## আরও পড়া
 - [`streamlit-shap`](https://github.com/snehankekre/streamlit-shap)
 - [SHAP](https://github.com/slundberg/shap)

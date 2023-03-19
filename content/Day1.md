@@ -1,40 +1,41 @@
-# Setting up a local development environment
+# একটি লোকাল ডেভেলপমেন্ট পরিবেশ স্থাপন
 
-Before we can actually start building Streamlit apps, we will first have to setup a development environment.
+আসলে স্ট্রিমলিট অ্যাপ তৈরি করা শুরু করার আগে, আমাদের প্রথমে ডেভেলপমেন্টের জন্য পরিবেশ সেটআপ করতে হবে।
 
-Let's start by installing and setting up a conda environment.
+আসুন একটি কনডা পরিবেশ ইনস্টল এবং সেট আপ করে শুরু করি।
 
-## **Install conda**
-- Install `conda` by going to https://docs.conda.io/en/latest/miniconda.html and choose your operating system (Windows, Mac or Linux). 
-- Download and run the installer to install `conda`.
+## **কনডা ইনস্টল**
+- `conda` ইনস্টল এখানে https://docs.conda.io/en/latest/miniconda.html. আপনি অপারেটিং সিস্টেম বেছে নিন (উইন্ডোস, ম্যাক বা লিনাক্স). 
+- ইনস্টল করার জন্য ইনস্টলারটি ডাউনলোড করুন এবং `conda` চালান।
 
-## **Create a new conda environment**
-Now that you have conda installed, let's create a conda environment for managing all the Python library dependencies.
+## **একটি নতুন কনডা পরিবেশ তৈরি করুন**
 
-To create a new environment with Python 3.9, enter the following:
+এখন যেহেতু আপনি কনডা ইনস্টল করেছেন, আসুন পাইথন লাইব্রেরির সমস্ত নির্ভরতা পরিচালনা করার জন্য একটি কনডা পরিবেশ তৈরি করি।
+
+পাইথন ৩.৯ এর সাথে একটি নতুন পরিবেশ তৈরি করতে, নিম্নলিখিতটি প্রবেশ করান:
 ```bash
 conda create -n stenv python=3.9
 ```
 
-where `create -n stenv` will create a conda environment named `stenv` and `python=3.9` will setup the conda environment with Python version 3.9.
+যেখানে `create -n stenv` একটি কনডা পরিবেশ তৈরি করবে যার নাম `stenv` এবং `python=3.9` সেটআপ পরিবেশ তৈরী করবে যার সংস্করণ ৩.৯।
 
-## **Activate the conda environment**
+## **কনডা পরিবেশ সক্রিয় করুন**
 
-To use a conda environment that we had just created that is named `stenv`, enter the following into the command line:
+তৈরী করা কনডা পরিবেশ যার নাম `stenv`, কোমান্ড লাইনে টাইপ করুন:
 
 ```bash
 conda activate stenv
 ```
 
-## **Install the Streamlit library**
+## **স্ট্রিমলিট লাইব্রেরি ইনস্টল করুন**
 
-It's now time to install the `streamlit` library:
+এখনি `streamlit` লাইব্রেরি ইনস্টল করার সময়:
 ```bash
 pip install streamlit
 ```
 
-## **Launching the Streamlit demo app**
-To launch the Streamlit demo app (Figure 1) type:
+## **স্ট্রিমলিট ডেমো অ্যাপ চালু করা**
+অ্যাপ চালু করতে(Figure 1):
 ```bash
 streamlit hello
 ```

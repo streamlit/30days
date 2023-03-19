@@ -75,7 +75,7 @@ for i in days_list:
         st.markdown(f"# 🗓️ {i}")
         j = i.replace(" ", "")
         with open(f"content/{j}.md", "r") as f:
-            st.markdown(f.read(), encoding="utf-8")
+            st.markdown(f.read())
         if os.path.isfile(f"content/figures/{j}.csv") == True:
             st.markdown("---")
             st.markdown("### Figures")

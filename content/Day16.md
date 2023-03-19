@@ -1,17 +1,17 @@
-# Customizing the theme of Streamlit apps
+# স্ট্রিমলিট অ্যাপের থিম কাস্টমাইজ করা
 
 We can customize the theme by adjusting parameters in `config.toml`, which is a configuration file stored in the same folder as the app in the `.streamlit` folder.
 
-## What we're building?
+## কি বানাচ্ছি আমরা?
 
-A simple app that shows the result of our theme customization. This is made possible by customizing the HTML HEX code inside the [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) file.
+একটি সাধারণ অ্যাপ যা থিম কাস্টমাইজ করে। This is made possible by customizing the  code inside the [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) এই ফাইলটির ভেতরে HTML HEX কোড পরিবর্তণ করে তা সম্ভব.
 
-## Demo app
+## ডেমো অ্যাপ
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-custom-theme/)
 
-## Code
-Here's the code to the [`streamlit_app.py`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/streamlit_app.py) file:
+## কোড
+অ্যাপের কোড এইখানে [`streamlit_app.py`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/streamlit_app.py):
 ```python
 import streamlit as st
 
@@ -32,7 +32,7 @@ number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
 ```
 
-Here's the code to the [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) file:
+কনফিগারেশন ফাইলের কোড এইখানে [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml):
 ```python
 [theme]
 primaryColor="#F39C12"
@@ -42,18 +42,18 @@ textColor="#FFFFFF"
 font="monospace"
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## লাইন-বাই-লাইন ব্যাখ্যা
+স্ট্রিমলিট অ্যাপ তৈরী করার জন্য প্রথম জিনিসটি হলো `streamlit` লাইব্রেরি `st` হিসেবে ইম্পোর্ট করা:
 ```python
 import streamlit as st
 ```
 
-This is followed by creating a title text for the app:
+তারপর অ্যাপের জন্য টাইটেল টেক্সট বানান:
 ```python
 st.title('Theming with config.toml')
 ```
 
-Next, we're going to show the contents of the `.streamlit/config.toml` file which we'll first display a note of this via `st.write` followed by the actual code via `st.code`:
+কনফিগারেশন ফাইল `.streamlit/config.toml` তার বিষয়বস্তু `st.write` দিয়ে দেখান এবং আসল কোডের জন্য `st.code` ব্যবহার করুন:
 ```python
 st.write('Contents of the ./streamlit/config.toml file of this app')
 
@@ -67,20 +67,20 @@ font="monospace"
 """)
 ```
 
-Finally, we're creating a slider widget in the sidebar followed by displaying the selected number:
+অবশেষে, আমরা নির্বাচিত নম্বর প্রদর্শন করে সাইডবারে একটি স্লাইডার উইজেট তৈরি করছি:
 ```python
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
 ```
 
-Let's now take a look at the custom colors that we've used in this app, which is specified in the `.streamlit/config.toml` file:
-- `primaryColor="#F39C12"` - This sets the primary color to orange. Notice the orange colors in the slider widget.
-- `backgroundColor="#2E86C1"` - This sets the background color to blue. Notice the main panel has a blue background color.
-- `secondaryBackgroundColor="#AED6F1"` - This sets the secondary background color to dark gray. Notice the gray background color of the sidebar and the background color of the code box in the main panel.
-- `textColor="#FFFFFF"` - The text color is set to white.
-- `font="monospace"` - This sets the font to monospace.
+আসুন এখন আমরা এই অ্যাপটিতে ব্যবহার করেছি এমন কাস্টম রঙগুলি দেখে নেওয়া যাক `.streamlit/config.toml` কনফিগারেশন ফাইলে:
+- `primaryColor="#F39C12"` - এটি প্রাথমিক রঙ কমলা সেট করে। স্লাইডার উইজেটে কমলা রঙগুলি লক্ষ্য করুন।
+- `backgroundColor="#2E86C1"` - এটি পটভূমির রঙকে নীলে সেট করে। লক্ষ্য করুন মূল প্যানেলে একটি নীল পটভূমির রঙ রয়েছে।
+- `secondaryBackgroundColor="#AED6F1"` - এটি সেকেন্ডারি পটভূমির রঙকে গাঢ় ধূসরে সেট করে। সাইডবারের ধূসর পটভূমির রঙ এবং প্রধান প্যানেলে কোড বক্সের পটভূমির রঙ লক্ষ্য করুন।
+- `textColor="#FFFFFF"` - পাঠ্যের রঙ সাদাতে সেট করা হয়েছে।
+- `font="monospace"` - এটি ফন্টটিকে মনোস্পেসে সেট করে।
 
 
-## Further reading
+## আরও পড়া
 - [Theming](https://docs.streamlit.io/library/advanced-features/theming)
-- [HTML Color Codes](https://htmlcolorcodes.com/) is a great tool for selecting colors of interest.
+- [HTML Color Codes](https://htmlcolorcodes.com/) আগ্রহের রং নির্বাচন করার জন্য একটি দুর্দান্ত হাতিয়ার।

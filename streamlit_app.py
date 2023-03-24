@@ -33,7 +33,7 @@ except KeyError:
     st.session_state.day = days_list[0]
 
 selected_day = st.selectbox(
-    "Start the Challenge 👇", days_list, key="day", on_change=update_params
+    "চ্যালেঞ্জ শুরু করুন 👇", days_list, key="day", on_change=update_params
 )
 
 with st.expander("#30DaysOfStreamlit সম্পর্কিত"):

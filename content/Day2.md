@@ -1,14 +1,14 @@
-# Building your first Streamlit app
+# প্রথম স্ট্রিমলিট অ্যাপ বানানোর পদক্ষেপ
 
-## Fire up your IDE
+## আপনার আইডিই(IDE) বা ইন্টিগ্রেটেড ডেভেলপমেন্ট এনভায়রনমেন্ট চালু করুন 
 
-Fire up your IDE whether it be Atom, VS Code or even a cloud IDE such as GitPod or GitHub.dev.
+আপনার আইডিই চালু করুন এবং সেটা এটম, ভিএস কোড বা এমনকি ক্লাউড আইডিই যেমন গিট্পড বা গিটহাব.ডেভো হতে পারে। 
 
-Create a file called `streamlit_app.py`
+একটি ফাইল তৈরী করুন যার নাম `streamlit_app.py`
 
-## Entering your first lines of code
+## আপনার কোডের প্রথম লাইনগুলি প্রবেশ করানো হচ্ছে
 
-To the newly created file, enter the following lines of code:
+সদ্য তৈরি ফাইলটিতে, কোডের নিম্নলিখিত লাইনগুলি লিখুন:
 
 ```
 import streamlit as st
@@ -16,16 +16,17 @@ import streamlit as st
 st.write('Hello world!')
 ```
 
-Save the file.
+ফাইলটি সংরক্ষণ করুন।
 
-## Fire up the command line terminal
+## তারপর কম্যান্ড লাইন টার্মিনাল চালু করুন
 
-To the terminal, enter the following:
+টার্মিনালে নিম্নলিখিত লাইনগুলি লিখুন:
 
 ```
 streamlit run streamlit_app.py
 ```
 
-A browser window should pop-up showing the newly created Streamlit app.
+একটি ব্রাউজার উইন্ডো পপ-আপ হওয়া উচিত সদ্য নির্মিত স্ট্রিমলিট অ্যাপটি দেখায়।
 
-**Congratulations!** You have just created your first Streamlit app!
+**অভিনন্দন!** আপনি এইমাত্র আপনার প্রথম স্ট্রিমলিট অ্যাপ তৈরি করেছেন!
+

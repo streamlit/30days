@@ -266,4 +266,4 @@ with elements("demo"):
 
 ## কোন প্রশ্ন?
 
-স্ট্রিমলিট এলিমেন্টস বা সেখানে এই চ্যালেঞ্জ সম্পর্কিত যেকোনো প্রশ্ন নির্দ্বিধায় করুন: [স্ট্রিমলিট এলিমেন্টস বিষয়](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material- ui-nivo-charts-and-more/24616) 
+স্ট্রিমলিট এলিমেন্টস বা সেখানে এই চ্যালেঞ্জ সম্পর্কিত যেকোনো প্রশ্ন নির্দ্বিধায় করুন: [স্ট্রিমলিট এলিমেন্টস বিষয়](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616) 

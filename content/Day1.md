@@ -26,6 +26,15 @@ To use a conda environment that we had just created that is named `stenv`, enter
 conda activate stenv
 ```
 
+## **Install pip inside the conda environment**
+
+To install `streamlit` with `pip`, it is recommended to use the pip inside the conda environment. Using global `pip` could result `streamlit` installation in a different location which can cause `streamlit` not available in the `$path` variable. To make sure `streamlit` installation inside the conda environment, run the following into the command line to install `pip`:
+
+```bash
+conda install pip
+```
+After installation you can check which `pip` is in use by running "`which pip`" in the command line. 
+
 ## **Install the Streamlit library**
 
 It's now time to install the `streamlit` library:
